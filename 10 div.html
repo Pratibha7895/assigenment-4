@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Creat boxes</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .perentbox{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin-top: 0.5%;
+            }
+            .childbox{
+                background-color: rgb(221, 235, 94);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: 2px solid black;
+
+        
+            }
+            .container{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin-top: 0.5%;
+            }
+            [data-box]{
+                background-color: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: 2px solid black;
+            }
+            [data-box="1"]{background-color: #ff5722;}
+            [data-box="2"]{background-color: #ff5722;}
+            [data-box="3"]{background-color: #ff5722;}
+            [data-box="4"]{background-color: #ff5722;}
+            [data-box="5"]{background-color: #ff5722;}
+            
+            .element{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin-bottom: 0%;
+            }
+            .element div{
+                background-color: blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: 2px solid black;
+
+            }
+            .element div:nth-child(1){background-color: blue}
+            .element div:nth-child(2){background-color: blue}
+            .element div:nth-child(3){background-color: blue}
+            .element div:nth-child(4){background-color: blue}
+            .element div:nth-child(5){background-color: blue}
+
+            .class{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin-bottom: 0%;
+            }
+            .box{
+                background-color: rgb(255, 0, 128);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: 2px solid black;
+
+            }
+            .box1{background-color:rgb(255, 0, 128)}
+            .box2{background-color:rgb(255, 0, 128)}
+            .box3{background-color:rgb(255, 0, 128)}
+            .box4{background-color:rgb(255, 0, 128)}
+            .box5{background-color:rgb(255, 0, 128)}
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="perentbox">
+            <div class="childbox" id="box1">id selector</div>
+            <div class="childbox" id="box2">id selector</div>
+            <div class="childbox" id="box3">id selector</div>
+            <div class="childbox" id="box4">id selector</div>
+            <div class="childbox" id="box5">id selector</div>
+        </div>
+        <div class="container">
+            <div data-box="1" >attribute selector</div>
+            <div data-box="2" >attribute selector</div>
+            <div data-box="3" >attribute selector</div>
+            <div data-box="4" >attribute selector</div>
+            <div data-box="5" >attribute selector</div>
+        </div>
+        <div class="element">
+            <div>Element selecto</div>
+            <div>Element selecto</div>
+            <div>Element selecto</div>
+            <div>Element selecto</div>
+            <div>Element selecto</div>
+        </div>
+        <div class="class">
+            <div class="box box1">class selector</div>
+            <div class="box box2">class selector</div>
+            <div class="box box3">class selector</div>
+            <div class="box box4">class selector</div>
+            <div class="box box5">class selector</div>
+        </div>
+    </body>
+</html>
